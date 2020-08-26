@@ -1,16 +1,26 @@
 import React from "react";
-
+import {Form, Button} from 'react-bootstrap';
 function LoginForm(){
     return (
-    <div>
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required />
+      <div>
+        <Form>
+          <Form.Group controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required /> 
+          </Form.Group>
 
-    <button type="submit">Login</button>
-    </div>)
+          <Form.Group controlId="formBasicPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" placeholder="Password" />
+          </Form.Group>
+          <Form.Group controlId="formBasicCheckbox"></Form.Group>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form>
+      </div>
+    );
 }
 
 

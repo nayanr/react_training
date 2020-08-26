@@ -1,11 +1,13 @@
 import React from 'react';
-import './App.css';
-import LoginForm from './components/login'
+import LoginForm from './components/login';
+import MdashBoard from "./components/manager_dashboard";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div>
-    <LoginForm />
+    <MdashBoard/>
     </div>
   );
 }
