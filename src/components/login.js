@@ -1,8 +1,11 @@
 import React from "react";
-import {Form, Button} from 'react-bootstrap';
+import {Form, Button,Navbar} from 'react-bootstrap';
 function LoginForm(){
     return (
       <div>
+          <Navbar bg="dark" variant="dark">
+          <Navbar.Brand href="#home">Login</Navbar.Brand>
+        </Navbar>
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>

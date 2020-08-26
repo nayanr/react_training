@@ -13,7 +13,7 @@ function MdashBoard(){
           <Navbar.Brand href="#home">Manager Dashboard</Navbar.Brand>
         </Navbar>
         <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-          <Tab eventKey="Product" title="Product">
+          <Tab eventKey="Product" title="Product" enabled>
             <Product />
           </Tab>
           <Tab eventKey="Purchase" title="Purchase">
